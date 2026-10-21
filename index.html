@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thar Coal Utilization & Impact | FPCL</title>
+<style>
+:root{--navy:#123b5d;--blue:#0879a8;--teal:#12a6a0;--gold:#f2b544;--ink:#203446;--muted:#637789;--bg:#f2f7fa;--white:#fff;--line:#dbe6ed;--green:#16856b}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink)}
+header{background:linear-gradient(115deg,#123b5d,#0879a8 68%,#12a6a0);color:white;padding:26px clamp(18px,4vw,56px) 30px;position:relative;overflow:hidden}
+header:after{content:"";position:absolute;width:340px;height:340px;border:55px solid #ffffff12;border-radius:50%;right:-75px;top:-170px}
+.topline{display:flex;align-items:center;justify-content:space-between;gap:18px;position:relative;z-index:1}.brand{font-weight:800;letter-spacing:1.5px;border:1px solid #ffffff70;border-radius:10px;padding:10px 14px;font-size:14px}.tag{font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:#d4edf6}
+h1{font-size:clamp(27px,4vw,44px);line-height:1.1;margin:26px 0 10px;max-width:850px}header p{margin:0;color:#e2f2f8;max-width:750px;line-height:1.55}
+main{max-width:1440px;margin:auto;padding:24px clamp(14px,3vw,40px) 44px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:28px 0 14px}.section-head h2{margin:0;color:var(--navy);font-size:21px}.section-head p{margin:5px 0 0;color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.card{background:white;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 5px 18px #123b5d08;min-width:0}.metric{position:relative;overflow:hidden}.metric:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--teal)}.metric .label{font-size:12px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.55px}.metric .value{font-size:clamp(22px,2.4vw,31px);font-weight:800;color:var(--navy);margin:10px 0 5px;overflow-wrap:anywhere}.metric .sub{font-size:12px;color:var(--muted)}
+.layout{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}.inputs{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field label{display:block;font-size:12px;font-weight:700;color:#405b70;margin-bottom:7px}.field input,.field select{width:100%;padding:11px 12px;border:1px solid #cbdbe5;border-radius:9px;background:#fbfdfe;color:var(--ink);font-size:14px;outline-color:var(--teal)}.hint{font-size:11px;color:var(--muted);margin-top:5px}.btn{border:0;border-radius:9px;background:var(--navy);color:white;padding:11px 16px;font-weight:700;cursor:pointer}.btn:hover{background:var(--blue)}.btn.secondary{background:#e7f3f7;color:var(--navy)}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}
+.result{background:linear-gradient(135deg,#e9f8f6,#f5fbfd);border:1px solid #c9eae5;border-radius:12px;padding:16px;margin-top:16px}.result strong{font-size:24px;color:var(--green)}.result p{font-size:12px;color:var(--muted);margin:5px 0 0;line-height:1.5}
+.bars{display:grid;gap:15px;margin-top:12px}.barrow{display:grid;grid-template-columns:145px 1fr 52px;gap:10px;align-items:center;font-size:12px}.track{height:10px;background:#e8eff3;border-radius:20px;overflow:hidden}.fill{height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--teal));border-radius:20px;transition:width .6s ease}.barrow b{text-align:right;color:var(--navy)}
+.tablewrap{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:13px}th{text-align:left;background:#eef5f8;color:#456176;font-size:11px;text-transform:uppercase;letter-spacing:.4px}td,th{padding:12px 13px;border-bottom:1px solid var(--line)}td:last-child,th:last-child{text-align:right}.pill{display:inline-block;padding:5px 8px;border-radius:20px;background:#e1f5ef;color:#11785f;font-size:11px;font-weight:800}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.tile{border-radius:14px;padding:19px;background:white;border:1px solid var(--line)}.tile .icon{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:#e7f5f8;color:var(--blue);font-size:19px;margin-bottom:12px}.tile h3{margin:0 0 8px;color:var(--navy);font-size:15px}.tile p{margin:0;color:var(--muted);font-size:12px;line-height:1.6}
+.note{font-size:12px;color:var(--muted);line-height:1.6;margin-top:15px;padding:13px 15px;border-left:3px solid var(--gold);background:#fff9eb;border-radius:0 9px 9px 0}footer{border-top:1px solid var(--line);padding:20px 0 0;margin-top:30px;color:var(--muted);font-size:11px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:950px){.grid{grid-template-columns:repeat(2,1fr)}.layout{grid-template-columns:1fr}.tiles{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.grid,.inputs,.tiles{grid-template-columns:1fr}.barrow{grid-template-columns:110px 1fr 42px}.topline{align-items:flex-start}.brand{font-size:11px}.section-head{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header>
+  <div class="topline"><div class="brand">FPCL · OPERATIONS</div><div class="tag">Fuel Optimization • Operational Excellence</div></div>
+  <h1>Thar Coal Utilization<br>&amp; Operational Impact</h1>
+  <p>Interactive management dashboard to track coal blending, boiler performance, operating challenges and indicative fuel-cost impact.</p>
+</header>
+<main>
+  <div class="grid">
+    <div class="card metric"><div class="label">Thar coal price</div><div class="value" id="mThar">PKR 3,000</div><div class="sub">Per metric tonne · editable below</div></div>
+    <div class="card metric"><div class="label">Reference coal price</div><div class="value" id="mRef">PKR 4,200</div><div class="sub">RB-3 reference price per MT</div></div>
+    <div class="card metric"><div class="label">Price differential</div><div class="value" id="mDiff">PKR 1,200</div><div class="sub">Reference minus Thar coal</div></div>
+    <div class="card metric"><div class="label">Indicative saving</div><div class="value" id="mSaving">PKR 0</div><div class="sub">Based on entered Thar coal quantity</div></div>
+  </div>
+
+  <div class="section-head"><div><h2>01 / Fuel economics calculator</h2><p>Change the assumptions to estimate direct coal purchase-price differential.</p></div></div>
+  <div class="layout">
+    <div class="card">
+      <div class="inputs">
+        <div class="field"><label for="tharPrice">Thar coal price (PKR/MT)</label><input id="tharPrice" type="number" min="0" value="3000"></div>
+        <div class="field"><label for="refPrice">RB-3 reference price (PKR/MT)</label><input id="refPrice" type="number" min="0" value="4200"></div>
+        <div class="field"><label for="qty">Thar coal consumed (MT)</label><input id="qty" type="number" min="0" value="0"><div class="hint">Enter the quantity for the period being assessed.</div></div>
+        <div class="field"><label for="blend">Thar coal blend (%)</label><input id="blend" type="number" min="0" max="100" value="0"><div class="hint">For monitoring only; not used in savings formula.</div></div>
+      </div>
+      <div class="actions"><button class="btn" onclick="calculate()">Update dashboard</button><button class="btn secondary" onclick="resetCalc()">Reset assumptions</button></div>
+      <div class="result"><div class="label">Estimated purchase-price differential</div><strong id="savingBig">PKR 0</strong><p id="savingDetail">Enter the Thar coal quantity to calculate an indicative price differential. This is not a complete net-savings calculation.</p></div>
+    </div>
+    <div class="card">
+      <h3 style="margin:0;color:var(--navy)">Operating indicators</h3><p style="font-size:12px;color:var(--muted);margin:6px 0 20px">Illustrative monitoring ranges from the plant team's observations. Replace with validated operating data.</p>
+      <div class="bars">
+        <div class="barrow"><span>Bed temperature</span><div class="track"><div class="fill" id="bedBar"></div></div><b>810–850°C</b></div>
+        <div class="barrow"><span>S.A. coal feeder current</span><div class="track"><div class="fill" style="width:54%"></div></div><b>6.5–8 A</b></div>
+        <div class="barrow"><span>S.A. + Thar current</span><div class="track"><div class="fill" style="width:64%"></div></div><b>8–10 A</b></div>
+        <div class="barrow"><span>Feeder rated current</span><div class="track"><div class="fill" style="width:100%;background:var(--gold)"></div></div><b>14 A</b></div>
+      </div>
+      <div class="note">Current profiles are indicative only. Compare like-for-like feeder loading, coal properties and operating conditions before drawing conclusions.</div>
+    </div>
+  </div>
+
+  <div class="section-head"><div><h2>02 / Operational impact register</h2><p>Use this as a structured starting point for shift reviews and management updates.</p></div></div>
+  <div class="card tablewrap">
+    <table><thead><tr><th>Focus area</th><th>Observed / potential impact</th><th>Management focus</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td><b>Fuel economics</b></td><td>Lower purchase price than RB-3 reference coal</td><td>Assess cost per useful heat input and net savings</td><td><span class="pill">Track</span></td></tr>
+      <tr><td><b>Bed temperature</b></td><td>Lower bed temperature observed during Thar coal firing</td><td>Trend temperature against blend ratio and load</td><td><span class="pill">Monitor</span></td></tr>
+      <tr><td><b>Feeder reliability</b></td><td>Choking, de-choking and cleaning workload</td><td>Review feeder suitability, gate setting and coal flow</td><td><span class="pill">Action</span></td></tr>
+      <tr><td><b>Ash handling</b></td><td>Potential change in bottom-ash draining frequency</td><td>Record drain frequency, ash quantity and disposal impact</td><td><span class="pill">Track</span></td></tr>
+      <tr><td><b>Emissions &amp; limestone</b></td><td>Combustion and sulphur-capture demand may vary</td><td>Validate SOx, NOx, CO, dust and limestone consumption</td><td><span class="pill">Verify</span></td></tr>
+      <tr><td><b>Housekeeping</b></td><td>Coal dust and additional operator workload</td><td>Improve dust control, routine cleaning and safe access</td><td><span class="pill">Action</span></td></tr>
+    </tbody></table>
+  </div>
+
+  <div class="section-head"><div><h2>03 / Decision priorities</h2><p>Balance fuel price benefits with performance, reliability, safety and environmental compliance.</p></div></div>
+  <div class="tiles">
+    <div class="tile"><div class="icon">↗</div><h3>Blend optimization</h3><p>Run controlled blend trials and compare steam output, heat rate, bed temperature and auxiliary consumption at comparable loads.</p></div>
+    <div class="tile"><div class="icon">⚙</div><h3>Feeder reliability</h3><p>Track choking frequency, stoppage duration, motor current and manual cleaning hours by feeder and blend ratio.</p></div>
+    <div class="tile"><div class="icon">◉</div><h3>Performance verification</h3><p>Review coal GCV, moisture, ash and sulphur with emissions, limestone consumption and ash-handling records.</p></div>
+    <div class="tile"><div class="icon">＋</div><h3>Net cost assessment</h3><p>Include transport, handling, efficiency changes, limestone, ash disposal, maintenance and downtime before reporting net savings.</p></div>
+    <div class="tile"><div class="icon">✓</div><h3>Safe operation</h3><p>Use approved operating limits and risk controls. Do not change feeder settings or operating limits without site authorization.</p></div>
+    <div class="tile"><div class="icon">▤</div><h3>Management reporting</h3><p>Maintain a daily register for blend ratio, coal consumption, feeder issues, operating trends, actions and accountable owners.</p></div>
+  </div>
+  <div class="note"><b>Calculation limitation:</b> Estimated differential = (RB-3 price − Thar coal price) × Thar coal quantity. It assumes the entered Thar quantity replaces an equal quantity of reference coal and excludes differences in calorific value, transport, efficiency, consumables, maintenance and downtime. Validate all figures before using them for financial or management decisions.</div>
+  <footer><span>THAR COAL UTILIZATION · OPERATIONS DASHBOARD</span><span>Prototype · Offline-ready · No external libraries or data transmission</span></footer>
+</main>
+<script>
+const fmt = n => 'PKR ' + Math.round(Number(n)||0).toLocaleString('en-PK');
+function calculate(){
+ const tp=Math.max(0,Number(document.getElementById('tharPrice').value)||0);
+ const rp=Math.max(0,Number(document.getElementById('refPrice').value)||0);
+ const q=Math.max(0,Number(document.getElementById('qty').value)||0);
+ const b=Math.min(100,Math.max(0,Number(document.getElementById('blend').value)||0));
+ const diff=rp-tp, saving=diff*q;
+ document.getElementById('mThar').textContent=fmt(tp);
+ document.getElementById('mRef').textContent=fmt(rp);
+ document.getElementById('mDiff').textContent=fmt(diff);
+ document.getElementById('mSaving').textContent=fmt(saving);
+ document.getElementById('savingBig').textContent=fmt(saving);
+ document.getElementById('savingDetail').textContent=`${q.toLocaleString('en-PK')} MT × ${fmt(diff)} price differential per MT. Blend ratio entered: ${b}%. Net operating savings may differ.`;
+ document.getElementById('bedBar').style.width='81%';
+}
+function resetCalc(){
+ document.getElementById('tharPrice').value=3000;
+ document.getElementById('refPrice').value=4200;
+ document.getElementById('qty').value=0;
+ document.getElementById('blend').value=0;
+ calculate();
+}
+calculate();
+</script>
+</body>
+</html>
